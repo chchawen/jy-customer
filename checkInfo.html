@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>质检详细</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page-group">
+        <div class="page page-current">
+            <div class="content">
+                <div class="checkInfo-div-card">
+                    <div class="checkInfo-div-first" onclick="titleClick(this)">
+                        <div class="checkInfo-div-first-left">
+                            <img class="checkInfo-img checkInfo-img-basics" src="img/basics.png">&nbsp;
+                            <span class="font-18">基本信息（5项）</span>
+                        </div>
+                        <div class="checkInfo-div-first-right">
+                            <img class="checkInfo-img checkInfo-img-toast" src="img/warning.png">&nbsp;
+                            <span class="font-18 color-gray">1项不合格</span>&nbsp;&nbsp;&nbsp;
+                            <img class="checkInfo-img checkInfo-img-icon" src="img/arrows1.png">
+                        </div>
+                    </div>
+                    <div class="checkInfo-div-list">
+                        <div class="checkInfo-div-item">
+                            <div class="checkInfo-div-item-left">
+                                <span class="font-18">边框背板：外壳有磕碰/掉漆</span>
+                            </div>
+                            <div class="checkInfo-div-item-right">
+                                <img class="checkInfo-img checkInfo-img-toast" src="img/correct.png">
+                            </div>
+                        </div>
+                        <div class="checkInfo-div-item-warning">
+                            <div class="checkInfo-div-item-left">
+                                <span class="font-18">屏幕外观：屏幕正常</span>
+                            </div>
+                            <div class="checkInfo-div-item-right">
+                                <img class="checkInfo-img checkInfo-img-toast" src="img/warning.png">
+                            </div>
+                            <div class="checkInfo-div-item-toast">
+                                <span class="font-18">实际检测为：屏幕有轻微划痕</span>
+                            </div>
+                        </div>
+                        <div class="checkInfo-div-item">
+                            <div class="checkInfo-div-item-left">
+                                <span class="font-18">屏幕显示：屏幕正常显示</span>
+                            </div>
+                            <div class="checkInfo-div-item-right">
+                                <img class="checkInfo-img checkInfo-img-toast" src="img/correct.png">
+                            </div>
+                        </div>
+                        <div class="checkInfo-div-item">
+                            <div class="checkInfo-div-item-left">
+                                <span class="font-18">维修拆机史：从未维修</span>
+                            </div>
+                            <div class="checkInfo-div-item-right">
+                                <img class="checkInfo-img checkInfo-img-toast" src="img/correct.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkInfo-div-card">
+                    <div class="checkInfo-div-first" onclick="titleClick(this)">
+                        <div class="checkInfo-div-first-left">
+                            <img class="checkInfo-img checkInfo-img-basics" src="img/facade.png">&nbsp;
+                            <span class="font-18">外观检测（4项）</span>
+                        </div>
+                        <div class="checkInfo-div-first-right">
+                            <img class="checkInfo-img checkInfo-img-toast" src="img/warning.png">&nbsp;
+                            <span class="font-18 color-gray">1项不合格</span>&nbsp;&nbsp;&nbsp;
+                            <img class="checkInfo-img checkInfo-img-icon" src="img/arrows2.png">
+                        </div>
+                    </div>
+                    <div class="checkInfo-div-list">
+                        <div class="checkInfo-div-item">
+                            <div class="checkInfo-div-item-left">
+                                <span class="font-18">边框背板：外壳有磕碰/掉漆</span>
+                            </div>
+                            <div class="checkInfo-div-item-right">
+                                <img class="checkInfo-img checkInfo-img-toast" src="img/correct.png">
+                            </div>
+                        </div>
+                        <div class="checkInfo-div-item-warning">
+                            <div class="checkInfo-div-item-left">
+                                <span class="font-18">屏幕外观：屏幕正常</span>
+                            </div>
+                            <div class="checkInfo-div-item-right">
+                                <img class="checkInfo-img checkInfo-img-toast" src="img/warning.png">
+                            </div>
+                            <div class="checkInfo-div-item-toast">
+                                <span class="font-18">实际检测为：屏幕有轻微划痕</span>
+                            </div>
+                        </div>
+                        <div class="checkInfo-div-item">
+                            <div class="checkInfo-div-item-left">
+                                <span class="font-18">屏幕显示：屏幕正常显示</span>
+                            </div>
+                            <div class="checkInfo-div-item-right">
+                                <img class="checkInfo-img checkInfo-img-toast" src="img/correct.png">
+                            </div>
+                        </div>
+                        <div class="checkInfo-div-item">
+                            <div class="checkInfo-div-item-left">
+                                <span class="font-18">维修拆机史：从未维修</span>
+                            </div>
+                            <div class="checkInfo-div-item-right">
+                                <img class="checkInfo-img checkInfo-img-toast" src="img/correct.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkInfo-div-card">
+                    <div class="checkInfo-div-first">
+                        <div class="checkInfo-div-first-left">
+                            <img class="checkInfo-img checkInfo-img-basics" src="img/function.png">&nbsp;
+                            <span class="font-18">功能性问题（11项）</span>
+                        </div>
+                        <div class="checkInfo-div-first-right">
+                            <img class="checkInfo-img checkInfo-img-toast" src="img/correct.png">&nbsp;
+                            <span class="font-18 color-gray">合格</span>&nbsp;&nbsp;&nbsp;
+                            <img class="checkInfo-img checkInfo-img-icon" src="img/arrows1.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type='text/javascript' src="js/zepto.js" charset='utf-8'></script>
+<script type='text/javascript' src="http://g.alicdn.com/msui/sm/0.6.2/js/sm.js" charset='utf-8'></script>
+<script type='text/javascript' src="js/swiper.jquery.min.js" charset='utf-8'></script>
+<script type='text/javascript' src="js/util.js" charset='utf-8'></script>
+<script type='text/javascript' src="js/page/checkInfo.js" charset='utf-8'></script>
+<script>
+    
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?0f281bd8227ca5eabc50b92575019358";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</html>

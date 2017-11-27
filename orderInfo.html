@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>订单详情</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page-group">
+        <div class="page page-current">
+            <div class="content">
+                <div class="orderInfo-div-content">
+                    <div class="orderInfo-div-status" onclick="gotoPage('orderStatus')">
+                        <div class="orderInfo-div-left">
+                            <img class="order-img-left" src="img/order status.png">&nbsp;
+                            <span class="font-18">订单状态</span>
+                        </div>
+                        <div class="orderInfo-div-center">
+                            <div class="status-div-span">
+                                <span class="font-18 color-green">待报价</span>
+                            </div>
+                            <div class="status-div-span">
+                                <span class="font-18 color-gray">2017-09-03 20:22:29</span>
+                            </div>
+                            <div class="status-div-span">
+                                <span class="font-18 color-gray">预计</span>
+                                <span class="font-18">06:00:00</span>
+                                <span class="font-18 color-gray">报价结束</span>
+                            </div>
+                        </div>
+                        <div class="orderInfo-div-right orderInfo-div-right-status">
+                            <img class="right-icon " src="img/right arrow.png">
+                        </div>
+                    </div>
+                    <hr class="orderInfo-line" />
+                    <div class="orderInfo-div-price">
+                        <div class="orderInfo-div-left">
+                            <img class="order-img-left" src="img/money.png">&nbsp;
+                            <span class="font-18">交易金额</span>
+                        </div>
+                        <div class="orderInfo-div-center">
+                            <div class="status-div-span">
+                                <span class="font-18 color-gray">最终交易价格</span>&nbsp;&nbsp;
+                                <span class="font-18">￥3000</span>
+                            </div>
+                            <div class="status-div-span">
+                                <span class="font-18 color-gray">质检后价格</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span class="font-18">￥3000</span>
+                            </div>
+                            <div class="status-div-span">
+                                <span class="font-18 color-gray">商家预估价格</span>&nbsp;&nbsp;
+                                <span class="font-18">￥3400</span><br />
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="orderInfo-line" />
+                    <div class="orderInfo-div-recycle">
+                        <div class="orderInfo-div-left">
+                            <img class="order-img-left" src="img/recycle.png">&nbsp;
+                            <span class="font-18">取件方式</span>
+                        </div>
+                        <div class="orderInfo-div-center">
+                            <div class="status-div-span">
+                                <span class="font-18 color-gray">上门取件</span>
+                            </div>
+                            <div class="status-div-span">
+                                <span class="font-18">赵钊 13776546666</span>
+                            </div>
+                            <div class="status-div-span">
+                                <span class="font-18 color-gray">南京市玄武区玄武大道江苏软件园699-22号</span>
+                            </div>
+                            <div class="status-div-span">
+                                <span class="font-18 color-gray">预约时间：2017-09-06</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="orderInfo-line" />
+                    <div class="orderInfo-div-business" onclick="gotoPage('businessInfo')">
+                        <div class="orderInfo-div-left">
+                            <img class="order-img-left" src="img/commercial.png">&nbsp;
+                            <span class="font-18">商户信息</span>
+                        </div>
+                        <div class="orderInfo-div-center">
+                            <div class="status-div-span">
+                                <span class="font-18">葛大爷数码皇冠店</span>
+                            </div>
+                        </div>
+                        <div class="orderInfo-div-right orderInfo-div-right-business">
+                            <img class="right-icon" src="img/right arrow.png">
+                        </div>
+                    </div>
+                    <hr class="orderInfo-line" />
+                    <div class="orderInfo-div-goods">
+                        <div class="orderInfo-div-left">
+                            <img class="order-img-left" src="img/goods.png">&nbsp;
+                            <span class="font-18">商品信息</span><br />
+                            <img class="orderInfo-img-goods" src="img/iphone7plus.png">
+                        </div>
+                        <div class="orderInfo-div-center">
+                            <div class="status-div-span">
+                                <span class="font-18">苹果 iphone7 plus</span>
+                            </div>
+                            <div class="status-div-span">
+                                <span class="font-18 color-gray">机身完好、屏幕完好、液晶正常、无进水、无拆机无维修、触摸功能正常</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="orderInfo-line" />
+                    <div class="orderInfo-div-order">
+                        <div class="orderInfo-div-order-content">
+                            <div class="orderInfo-div-order-content-left">
+                                <span class="font-18">订单编号：</span>
+                            </div>
+                            <div class="orderInfo-div-order-content-right">
+                                <span class="font-18">O03884785739488</span>
+                            </div>
+                        </div>
+                        <div class="orderInfo-div-order-content">
+                            <div class="orderInfo-div-order-content-left">
+                                <span class="font-18">创建时间：</span>
+                            </div>
+                            <div class="orderInfo-div-order-content-right">
+                                <span class="font-18">2017-09-03 20:22:29</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="index-div-tel">
+                    <div class="index-div-tel-content">
+                        <span class="font-16 ensure-color">客服热线025-2293885</span><br/>
+                        <span class="color-gray font-16">服务时间9:00-21:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type='text/javascript' src="js/zepto.js" charset='utf-8'></script>
+<script type='text/javascript' src="http://g.alicdn.com/msui/sm/0.6.2/js/sm.js" charset='utf-8'></script>
+<script type='text/javascript' src="js/swiper.jquery.min.js" charset='utf-8'></script>
+<script type='text/javascript' src="js/util.js" charset='utf-8'></script>
+<script type='text/javascript' src="js/page/orderInfo.js" charset='utf-8'></script>
+<script>
+    
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?0f281bd8227ca5eabc50b92575019358";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</html>

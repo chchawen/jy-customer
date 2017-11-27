@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>确认回收方式</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page-group">
+        <div class="page page-current">
+            <div class="quoteStyle-div-next">
+                <div class="quoteStyle-div-next-button">
+                    <a href="javascript:void(0)" onclick="gotoPage('payStyle')" class="button button-round goodRemark-button">下一步</a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="quoteStyle-div-head">
+                    <img class="quoteStyle-img-plan" src="img/plan1.png">&nbsp;
+                    <span class="font-16">回收方式</span>&nbsp;&nbsp;
+                    <span class="font-16 color-gray">--------------</span>&nbsp;&nbsp;
+                    <img class="quoteStyle-img-plan" src="img/plan2.png">&nbsp;
+                    <span class="font-16 color-gray">收款方式</span>
+                </div>
+                <div class="quoteStyle-div-form">
+                	<div class="quoteStyle-div-form-title">
+                		<span class="font-22">选择回收方式</span>
+                	</div>
+                	<div class="quoteStyle-div-form-style">
+                		<div class="quoteStyle-div-form-style-img" onclick="chooseQuoteStyle('address-click')">
+                			<img class="quoteStyle-img-style" style="margin-left: 0.3rem" src="img/visit.png">
+                			<br />
+                			<span class="font-18">上门回收</span>
+                			<div class="quoteStyle-div-form-choose">
+                				<span class="font-24 font-bold">一</span>
+                			</div>
+                		</div>
+                		<div class="quoteStyle-div-form-style-img" onclick="chooseQuoteStyle('metro-click')">
+                			<img class="quoteStyle-img-style" src="img/metro.png">
+                			<br />
+                			<span class="font-18">地铁回收</span>
+                			<div class="quoteStyle-div-form-choose" style="display: none">
+                				<span class="font-24 font-bold">一</span>
+                			</div>
+                		</div>
+                	</div>
+                	<div class="quoteStyle-div-form-info">
+                		<div class="quoteStyle-div-form-info-content address">
+                			<div>
+                				<span class="font-18">上门地址</span>
+                			</div>
+                			<div class="quoteStyle-div-form-line">
+                				<div class="quoteStyle-div-form-choose-left">
+                					<span class="font-18 color-gray">选择您所在的区域</span>
+                				</div>
+                				<div class="quoteStyle-div-form-choose-right">
+                					<img class="checkInfo-img checkInfo-img-icon" src="img/arrows1.png" />
+                				</div>
+                			</div>
+                			<div class="quoteStyle-div-form-line">
+                				<input class="quoteStyle-div-form-input" placeholder="填写您所在小区名称/楼号/门牌号"></input>
+                			</div>
+                		</div>
+                		<div class="quoteStyle-div-form-info-content metro" style="display: none">
+                			<div>
+                				<span class="font-18">交易站点</span>
+                			</div>
+                			<div class="quoteStyle-div-form-line">
+                				<div class="quoteStyle-div-form-choose-left">
+                					<span class="font-18 color-gray">选择地铁站</span>
+                				</div>
+                				<div class="quoteStyle-div-form-choose-right">
+                					<img class="checkInfo-img checkInfo-img-icon" src="img/arrows1.png" />
+                				</div>
+                			</div>
+                		</div>
+                		<div class="quoteStyle-div-form-info-content">
+                			<div>
+                				<span class="font-18">预约时间</span>
+                			</div>
+                			<div class="quoteStyle-div-form-line">
+                				<div class="quoteStyle-div-form-choose-left">
+                					<span class="font-18 color-gray">选择预约的交易时间</span>
+                				</div>
+                				<div class="quoteStyle-div-form-choose-right">
+                					<img class="checkInfo-img checkInfo-img-icon" src="img/arrows1.png" />
+                				</div>
+                			</div>
+                		</div>
+                		<div class="quoteStyle-div-form-info-content">
+                			<div>
+                				<span class="font-18">个人信息</span>
+                			</div>
+                			<div class="quoteStyle-div-form-line">
+                				<input class="quoteStyle-div-form-input" placeholder="请填写真实姓名" />
+                			</div>
+                			<div class="quoteStyle-div-form-line">
+                				<input class="quoteStyle-div-form-input" placeholder="" value="15851850967" />
+                			</div>
+                		</div>
+                	</div>
+                </div>
+                <div class="quoteStyle-div-good-info">
+                	<div class="quoteStyle-div-good-info-content">
+                		<div class="quoteStyle-div-good-info-title">
+                			<span class="font-18">回收清单</span>
+                		</div>
+                		<div class="quoteStyle-div-good-left">
+                			<span class="font-18">苹果iphone 7 plus 手机</span>
+                		</div>
+                		<div class="quoteStyle-div-good-right">
+                			<span class="font-18 color-green">商户报价¥5400</span>
+                		</div>
+                	</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type='text/javascript' src="js/zepto.js" charset='utf-8'></script>
+<script type='text/javascript' src="http://g.alicdn.com/msui/sm/0.6.2/js/sm.js" charset='utf-8'></script>
+<script type='text/javascript' src="js/util.js" charset='utf-8'></script>
+<script type='text/javascript' src="js/page/quoteStyle.js" charset='utf-8'></script>
+<script>
+    
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?0f281bd8227ca5eabc50b92575019358";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</html>

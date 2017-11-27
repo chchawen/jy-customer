@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>鲸鱼二手</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page-group">
+        <div class="page page-current">
+            <nav class="bar bar-tab">
+              <a class="tab-item external" href="#">
+                <img class="icon icon-mime" src="img/recommend.png" />
+                <span class="tab-label">推荐</span>
+              </a>
+              <a class="tab-item external" href="javascript:void(0)" onclick="gotoPage('my')">
+                <img class="icon icon-mime" src="img/me.png" />
+                <span class="tab-label">我的</span>
+              </a>
+            </nav>
+            <div class="content infinite-scroll native-scroll">
+                <div>
+                    <div class="swiper-container index-div-swiper">
+                        <div class="swiper-wrapper">
+                            <img class="swiper-slide index-swiper-pic" src="img/banner1.png" />
+                            <img class="swiper-slide index-swiper-pic" src="img/banner1.png" />
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="index-div-search">
+                        <div class="search-input index-div-search-input">
+                            <label class="icon icon-search icon-search-label" for="search"></label>
+                            <input readonly="readonly" class="index-input-search" onclick="gotoPage('search')" placeholder='iphone'/>
+                        </div>
+                    </div>
+                </div>   
+                <div class="index-div-phone-pad">
+                    <div class="index-div-phone" onclick="gotoPage('phone')">
+                        <img class="index-recover-phone" src="img/phone recycle.png"><br />
+                        <span class="font-20">闲置手机</span>
+                    </div>
+                    <div class="index-div-line"><hr class="index-line"></div>
+                    <div class="index-div-pad" onclick="gotoPage('pad')">
+                        <img class="index-recover-pad" src="img/tablet recycle.png"><br />
+                        <span class="font-20">闲置平板</span>
+                    </div>
+                </div>
+                <div class="index-div-help">
+                    <div class="index-div-help-title">
+                        <span class="font-20">小贴士</span><br/>
+                        <span class="font-14 font-italic">CHOICE</span>
+                    </div>
+                    <div class="index-div-help-content">
+                        <div class="index-div-help-content-div">
+                            <img class="index-div-help-content-img" src="img/banner1-1.png">
+                            <img class="index-div-help-content-img" src="img/banner1-1.png">
+                            <img class="index-div-help-content-img" src="img/banner1-1.png">
+                        </div>
+                    </div>
+                    <hr class="color-line" />
+                    <div class="index-div-help-foot">
+                        <span class="index-div-help-foot-more">查看更多</span>
+                    </div>
+                </div>
+                <div class="index-div-ensure">
+                    <div class="index-div-help-title">
+                        <span class="font-20">服务保障</span><br/>
+                        <span class="font-14 font-italic">ENSURE</span>
+                    </div>
+                    <div class="index-div-ensure-content">
+                        <div class="index-div-ensure-content-33">
+                            <img class="index-ensure-img" src="img/high price.png"><br />
+                            <span class="font-16 ensure-color">百余家买家</span><br />
+                            <span class="font-16 ensure-color">最高价在卖</span>
+                        </div>
+                        <div class="index-div-ensure-content-33">
+                            <img class="index-ensure-img" src="img/shortcut.png"><br />
+                            <span class="font-16 ensure-color">所有服务免费</span><br />
+                            <span class="font-16 ensure-color">贴心又快捷</span>
+                        </div>
+                        <div class="index-div-ensure-content-33">
+                            <img class="index-ensure-img" src="img/protect.png"><br />
+                            <span class="font-16 ensure-color">隐私保障</span><br />
+                            <span class="font-16 ensure-color">放心交易</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="index-div-tel">
+                    <div class="index-div-tel-content">
+                        <span class="font-16 ensure-color">客服热线025-2293885</span><br/>
+                        <span class="color-gray font-16">服务时间9:00-21:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="model" style="display: block" id="model">
+                <div class="model-background">
+                </div>
+                <div class="model-content">
+                    <div class="index-model-title">
+                        <span class="font-24 color-white">您有一笔订单已经报价结束</span>
+                    </div>
+                    <div class="index-model-message">
+                        <div class="index-model-img-div">
+                            <img class="index-model-img" src="img/iphone7plus.png" />
+                        </div>
+                        <div class="index-model-remark-div">
+                            <span class="font-20">苹果iphone7plus</span><br />
+                            <span class="font-20 color-gray">共</span><span class="font-20">10</span><span class="font-20 color-gray">家商户报价</span><br />
+                            <span class="font-20 color-green">¥4800-¥5400</span>
+                        </div>
+                    </div>
+                    <div class="index-model-button">
+                        <p>
+                            <a href="javascript:void(0)" onclick="gotoPage('quote')" class="button button-big button-round login-button">立即选择报价</a>
+                        </p>
+                    </div>
+                    <div class="model-esc" onclick="closeModel()">
+                        <span class="font-20 color-green">取消</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type='text/javascript' src="js/zepto.js" charset='utf-8'></script>
+<script type='text/javascript' src="http://g.alicdn.com/msui/sm/0.6.2/js/sm.js" charset='utf-8'></script>
+<script type='text/javascript' src="js/swiper.jquery.min.js" charset='utf-8'></script>
+<script type='text/javascript' src="js/util.js" charset='utf-8'></script>
+<script type='text/javascript' src="js/page/index.js" charset='utf-8'></script>
+<script>
+    
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?0f281bd8227ca5eabc50b92575019358";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>搜索</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page-group">
+        <div class="page page-current ">
+            <div class="login-div-content content">
+                <div class="login-div-title">
+                    <span class="font-30">请输入手机号</span>
+                </div>
+                <div class="login-div-input">
+                    <div class="login-div-img-phone">
+                        <img class="login-img-phone" src="img/phone2.png" />
+                    </div>
+                    <div class="login-div-input-phone">
+                        <input id="phone" class="login-input-phone" type="tel" placeholder="请输入手机号码"/>
+                    </div>
+                    <div class="login-div-img-close">
+                        <img class="login-img-close" src="img/delete3.png" />
+                    </div>
+                </div>
+                <div class="login-div-button" id="login">
+                    <p>
+                        <a href="javascript:void(0)" class="button button-big button-round login-button">登录</a>
+                    </p>
+                </div>
+                <div class="login-div-remark">
+                    <span class="font-14 color-green">*未注册过的手机号将自动创建账号</span>
+                </div>
+            </div>
+            <div class="model" style="display: none" id="model">
+                <div class="model-background">
+                </div>
+                <div class="model-content">
+                    <div>
+                        <br />
+                        <span class="font-30">验证手机号</span><br />
+                        <span class="font-16 check-phone-color">15851850967</span>
+                    </div>
+                    <div class="login-div-code">
+                        <input type="tel" maxlength="1" id="code1" class="login-div-code-item"/>
+                        <input type="tel" maxlength="1" id="code2" class="login-div-code-item login-margin-left" />
+                        <input type="tel" maxlength="1" id="code3" class="login-div-code-item login-margin-left" />
+                        <input type="tel" maxlength="1" id="code4" class="login-div-code-item login-margin-left" />
+                    </div>
+                    <div class="login-div-code-text">
+                        <span class="font-16">47s</span>
+                        <span class="font-16 check-phone-color">重新获取验证码</span>
+                    </div>
+                    <div class="model-esc" id="esc">
+                        <span class="font-20 color-green">取消</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type='text/javascript' src="js/zepto.js" charset='utf-8'></script>
+<script type='text/javascript' src="http://g.alicdn.com/msui/sm/0.6.2/js/sm.js" charset='utf-8'></script>
+<script type='text/javascript' src="js/util.js" charset='utf-8'></script>
+<script type='text/javascript' src="js/page/login.js" charset='utf-8'></script>
+<script>
+    
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?0f281bd8227ca5eabc50b92575019358";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</html>
