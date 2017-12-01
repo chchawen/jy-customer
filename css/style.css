@@ -78,6 +78,7 @@ index.html
   height: 5rem;
   width: 0px;
   border-left: 1px solid #C8C7CC;
+  border-right:none;
 }
 .index-recover-phone{
   width: 2.5rem;
@@ -237,6 +238,7 @@ search.html
   margin-right: 1rem;
   margin-left: 1rem;
   border-top:0.5px solid #C8C7CC;
+  border-bottom:none;
 }
 
 
@@ -294,6 +296,10 @@ login
   background-color: #333333;
   border: 0;
 }
+.login-button:hover{
+  color: #FFFFFF;
+  background-color: #58585F;
+}
 .login-div-remark{
   text-align: center;
 }
@@ -326,6 +332,9 @@ login
 }
 .login-model-input{
   height: 0px;
+}
+.tab-label{
+  color: #333333;
 }
 
 
@@ -560,6 +569,9 @@ category
   border: 1px solid #C8C7CC;
   padding-top: 0.4rem;
 }
+.publish-line{
+  border-bottom:none;
+}
 
 
 
@@ -608,6 +620,7 @@ category
   height: 2rem;
   width: 0px;
   border-left: 1px solid #C8C7CC;
+  border-right:none;
 }
 .my-img-order{
   width: 2.5rem;
@@ -721,6 +734,7 @@ category
 }
 .order-line{
   border-top: 1px solid #C8C7CC;
+  border-bottom:none;
 }
 .order-div-item-buttom{
   height: 2rem;
@@ -825,6 +839,7 @@ category
 .orderInfo-line{
   border-top: 1px solid #C8C7CC;
   margin: 0 0.5rem 0 0.5rem;
+  border-bottom:none;
 }
 .orderInfo-img-goods{
   height: 3rem;
@@ -1521,6 +1536,7 @@ category
 }
 .color-line{
   border-top: 1px solid #C8C7CC;
+  border-bottom:none;
 }
 .color-black{
   color: #000000;
